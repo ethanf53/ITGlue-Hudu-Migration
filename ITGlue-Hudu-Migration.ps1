@@ -38,10 +38,12 @@ $ResumePrevious = $true
 
 ############################### Company Settings ###############################
 #EF - set to not import since CW should bring all that we need.
+#AK - Should this be false then?  
 $ImportCompanies = $true
 
 ############################### Location Settings ###############################
 #EF
+#AK  Deciding not to since Hudu does not support locations at this point???
 $ImportLocations = $false
 
 # The asset layout name how locations will appear in Hudu
@@ -58,7 +60,8 @@ $HuduPrimaryLocationNames = @("Primary Address")
 $ImportDomains = $true
 
 # Choose if you would like to enable monitoring for the imported websites.
-$DisableWebsiteMonitoring = "false"
+#AK  Probably shouldnt monitor initially.  There is another option to monitor just the SSL portion.
+$DisableWebsiteMonitoring = "true"
 
 ############################### Configuration Settings ###############################
 $ImportConfigurations = $true
@@ -70,6 +73,7 @@ $ConfigImportIcon = "fas fa-sitemap"
 $ConfigurationPrefix = "ITGlue-"
 
 ############################### Contact Settings ###############################
+#Contacts left over in IT Glue will either be CW Manage synced or contacts that were created natively in IT Glue.  Might need to re-evaluate this.
 $ImportContacts = $false
 
 # The asset layout name how locations will appear in Hudu
