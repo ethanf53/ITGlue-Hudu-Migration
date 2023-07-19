@@ -17,17 +17,17 @@
 # Get a Hudu API Key from https://yourhududomain.com/admin/api_keys
 $HuduAPIKey = "ABCDEFGHIJK123456"
 # Set the base domain of your Hudu instance without a trailing /
-$HuduBaseDomain = "https://your.hududomain.com"
+$HuduBaseDomain = "https://remote.macatawatech.com"
 
 # IT Glue - MAKE SURE TO USE AN API KEY WITH PASSWORD ACCESS
-$ITGAPIEndpoint = "https://api.eu.itglue.com"
+$ITGAPIEndpoint = "https://api.itglue.com"
 $ITGKey = "ITG.123455677890ABCDEFGHJKIL"
 
 #Enter your primary IT Glue internal URL
-$ITGURL = "https://yourdomain.eu.itglue.com"
+$ITGURL = "https://macatawa-technologies.itglue.com"
 
 # IT Glue Internal Company Name (The documents from this company will be migrated to the Global KB)
-$InternalCompany = "Internal Company"
+$InternalCompany = "Macatawa Technologies"
 
 ############################### Core Settings ###############################
 # This should point to the folder where you extracted your IT Glue export
@@ -37,10 +37,12 @@ $ITGLueExportPath = "c:\temp\itglue\export\"
 $ResumePrevious = $true
 
 ############################### Company Settings ###############################
+#EF - set to not import since CW should bring all that we need.
 $ImportCompanies = $true
 
 ############################### Location Settings ###############################
-$ImportLocations = $true
+#EF
+$ImportLocations = $false
 
 # The asset layout name how locations will appear in Hudu
 $LocImportAssetLayoutName = "Locations"
@@ -61,14 +63,14 @@ $DisableWebsiteMonitoring = "false"
 ############################### Configuration Settings ###############################
 $ImportConfigurations = $true
 
-# The font awesome name for the locations icon in Hudu
+# The font awesome name for the configuration icon in Hudu
 $ConfigImportIcon = "fas fa-sitemap"
 
 # Set if you would like a Prefix in front of configuration names created in Hudu. This can make it easy to review and you can rename them later set to "" if you dont want one
 $ConfigurationPrefix = "ITGlue-"
 
 ############################### Contact Settings ###############################
-$ImportContacts = $true
+$ImportContacts = $false
 
 # The asset layout name how locations will appear in Hudu
 $ConImportAssetLayoutName = "People"
